@@ -29,7 +29,7 @@ extension UIView {
     ///   - size: Constant size to apply to the view. Has default value, can be excluded.
     /// - Returns: Dictionary of contraints keyed by ConstraintKey.
     @discardableResult
-    func constraints(centerXAnchor: NSLayoutXAxisAnchor?,
+    public func hybridConstraints(centerXAnchor: NSLayoutXAxisAnchor?,
                      centerYAnchor: NSLayoutYAxisAnchor?,
                      topAnchor: NSLayoutYAxisAnchor?,
                      leadingAnchor: NSLayoutXAxisAnchor?,

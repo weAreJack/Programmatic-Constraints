@@ -9,7 +9,7 @@
 import UIKit
 
 /// Keys used to access each NSLayoutConstraint returned by all methods in Programatic Constraints.
-enum ConstraintKey {
+public enum ConstraintKey {
     case LeadingConstraint
     case TrailingConstraint
     case TopConstraint
@@ -31,7 +31,7 @@ extension UIView {
     /// - Parameter view: The view to constrain to.
     /// - Returns: Dictionary of contraints keyed by ConstraintKey.
     @discardableResult
-    func constraintsEqual(toView view: UIView) -> [ConstraintKey: NSLayoutConstraint] {
+    public func constraintsEqual(toView view: UIView) -> [ConstraintKey: NSLayoutConstraint] {
         
         var constraints = [ConstraintKey: NSLayoutConstraint]()
         self.translatesAutoresizingMaskIntoConstraints = false
@@ -64,7 +64,7 @@ extension UIView {
     ///   - padding: The padding to apply.
     /// - Returns: Dictionary of contraints keyed by ConstraintKey.
     @discardableResult
-    func constraintsEqual(toView view: UIView, withEqualPadding padding: CGFloat) -> [ConstraintKey: NSLayoutConstraint] {
+    public func constraintsEqual(toView view: UIView, withEqualPadding padding: CGFloat) -> [ConstraintKey: NSLayoutConstraint] {
         
         var constraints = [ConstraintKey: NSLayoutConstraint]()
         self.translatesAutoresizingMaskIntoConstraints = false
@@ -97,7 +97,7 @@ extension UIView {
     ///   - padding: The padding to apply.
     /// - Returns: Dictionary of contraints keyed by ConstraintKey.
     @discardableResult
-    func constraintsEqual(toView view: UIView, withPadding padding: UIEdgeInsets) -> [ConstraintKey: NSLayoutConstraint] {
+    public func constraintsEqual(toView view: UIView, withPadding padding: UIEdgeInsets) -> [ConstraintKey: NSLayoutConstraint] {
         
         var constraints = [ConstraintKey: NSLayoutConstraint]()
         self.translatesAutoresizingMaskIntoConstraints = false
@@ -128,7 +128,7 @@ extension UIView {
     /// - Parameter view: The view to constrain to.
     /// - Returns: Dictionary of contraints keyed by ConstraintKey.
     @discardableResult
-    func constraintsEqual(toLayoutGuide layoutGuide: UILayoutGuide) -> [ConstraintKey: NSLayoutConstraint] {
+    public func constraintsEqual(toLayoutGuide layoutGuide: UILayoutGuide) -> [ConstraintKey: NSLayoutConstraint] {
         
         var constraints = [ConstraintKey: NSLayoutConstraint]()
         self.translatesAutoresizingMaskIntoConstraints = false
@@ -161,7 +161,7 @@ extension UIView {
     ///   - padding: The padding to apply.
     /// - Returns: Dictionary of contraints keyed by ConstraintKey.
     @discardableResult
-    func constraintsEqual(toLayoutGuide layoutGuide: UILayoutGuide, withEqualPadding padding: CGFloat) -> [ConstraintKey: NSLayoutConstraint] {
+    public func constraintsEqual(toLayoutGuide layoutGuide: UILayoutGuide, withEqualPadding padding: CGFloat) -> [ConstraintKey: NSLayoutConstraint] {
         
         var constraints = [ConstraintKey: NSLayoutConstraint]()
         self.translatesAutoresizingMaskIntoConstraints = false
@@ -194,7 +194,7 @@ extension UIView {
     ///   - padding: The padding to apply.
     /// - Returns: Dictionary of contraints keyed by ConstraintKey.
     @discardableResult
-    func constraintsEqual(toLayoutGuide layoutGuide: UILayoutGuide, withPadding padding: UIEdgeInsets) -> [ConstraintKey: NSLayoutConstraint] {
+    public func constraintsEqual(toLayoutGuide layoutGuide: UILayoutGuide, withPadding padding: UIEdgeInsets) -> [ConstraintKey: NSLayoutConstraint] {
         
         var constraints = [ConstraintKey: NSLayoutConstraint]()
         self.translatesAutoresizingMaskIntoConstraints = false

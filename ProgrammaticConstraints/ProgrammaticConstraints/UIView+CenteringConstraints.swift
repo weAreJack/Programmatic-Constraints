@@ -22,7 +22,7 @@ extension UIView {
     ///   - positionConstants: Constants to apply to the x and y position.  Has default value, can be excluded.
     /// - Returns: Dictionary of contraints keyed by ConstraintKey.
     @discardableResult
-    func centeringConstraints(centerXAnchor: NSLayoutXAxisAnchor?,
+    public func centeringConstraints(centerXAnchor: NSLayoutXAxisAnchor?,
                               centerYAnchor: NSLayoutYAxisAnchor?,
                               widthConstant: CGFloat?,
                               heightConstant: CGFloat?,
@@ -71,7 +71,7 @@ extension UIView {
     ///   - sizeAnchorConstants: Constants to apply to the width and height anchors of the view. Has default value, can be excluded.
     /// - Returns: Dictionary of contraints keyed by ConstraintKey.
     @discardableResult
-    func centeringConstraints(centerXAnchor: NSLayoutXAxisAnchor?,
+    public func centeringConstraints(centerXAnchor: NSLayoutXAxisAnchor?,
                               centerYAnchor: NSLayoutYAxisAnchor?,
                               widthAnchor: NSLayoutDimension?,
                               heightAnchor: NSLayoutDimension?,
@@ -123,7 +123,7 @@ extension UIView {
     ///   - sizeAnchorMultipliers: Multipliers to apply to the width and height anchors of the view. Has default value, can be excluded.
     /// - Returns: Dictionary of contraints keyed by ConstraintKey.
     @discardableResult
-    func centeringConstraints(centerXAnchor: NSLayoutXAxisAnchor?,
+    public func centeringConstraints(centerXAnchor: NSLayoutXAxisAnchor?,
                               centerYAnchor: NSLayoutYAxisAnchor?,
                               widthAnchor: NSLayoutDimension?,
                               heightAnchor: NSLayoutDimension?,

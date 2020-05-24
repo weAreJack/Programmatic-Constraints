@@ -23,7 +23,7 @@ extension UIView {
     ///   - size: Size constants to apply to the view. Has default value, can be excluded.
     /// - Returns: Dictionary of contraints keyed by ConstraintKey.
     @discardableResult
-    func borderConstraints(topAnchor: NSLayoutYAxisAnchor?,
+    public func borderConstraints(topAnchor: NSLayoutYAxisAnchor?,
                            leadingAnchor: NSLayoutXAxisAnchor?,
                            bottomAnchor: NSLayoutYAxisAnchor?,
                            trailingAnchor: NSLayoutXAxisAnchor?,
@@ -84,7 +84,7 @@ extension UIView {
     ///   - size: Size constants to apply to the view. Has default value, can be excluded.
     /// - Returns: Dictionary of contraints keyed by ConstraintKey.
     @discardableResult
-    func borderConstraints(topAnchor: NSLayoutYAxisAnchor?,
+    public func borderConstraints(topAnchor: NSLayoutYAxisAnchor?,
                            leadingAnchor: NSLayoutXAxisAnchor?,
                            bottomAnchor: NSLayoutYAxisAnchor?,
                            trailingAnchor: NSLayoutXAxisAnchor?,
@@ -146,7 +146,7 @@ extension UIView {
     ///   - size: Size constants to apply to the view. Has default value, can be excluded.
     /// - Returns: Dictionary of contraints keyed by ConstraintKey.
     @discardableResult
-    func borderConstraints(topAnchor: NSLayoutYAxisAnchor?,
+    public func borderConstraints(topAnchor: NSLayoutYAxisAnchor?,
                            leadingAnchor: NSLayoutXAxisAnchor?,
                            bottomAnchor: NSLayoutYAxisAnchor?,
                            trailingAnchor: NSLayoutXAxisAnchor?,

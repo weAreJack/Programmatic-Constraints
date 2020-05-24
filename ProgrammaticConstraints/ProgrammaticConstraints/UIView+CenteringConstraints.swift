@@ -17,15 +17,15 @@ extension UIView {
     /// - Parameters:
     ///   - centerXAnchor: The X axis anchor to center on.
     ///   - centerYAnchor: The Y axis anchor to center on.
-    ///   - widthConstant: The width constant to apply.
-    ///   - heightConstant: The height constant to apply.
+    ///   - widthConstant: The width constant to apply. Has default value, can be excluded.
+    ///   - heightConstant: The height constant to apply. Has default value, can be excluded.
     ///   - positionConstants: Constants to apply to the x and y position.  Has default value, can be excluded.
     /// - Returns: Dictionary of contraints keyed by ConstraintKey.
     @discardableResult
     public func centeringConstraints(centerXAnchor: NSLayoutXAxisAnchor?,
                               centerYAnchor: NSLayoutYAxisAnchor?,
-                              widthConstant: CGFloat?,
-                              heightConstant: CGFloat?,
+                              widthConstant: CGFloat? = nil,
+                              heightConstant: CGFloat? = nil,
                               positionConstants: CGPoint = .init(x: CGFloat.zero, y: CGFloat.zero)) -> [ConstraintKey: NSLayoutConstraint] {
         
         var constraints = [ConstraintKey: NSLayoutConstraint]()
@@ -72,11 +72,11 @@ extension UIView {
     /// - Returns: Dictionary of contraints keyed by ConstraintKey.
     @discardableResult
     public func centeringConstraints(centerXAnchor: NSLayoutXAxisAnchor?,
-                              centerYAnchor: NSLayoutYAxisAnchor?,
-                              widthAnchor: NSLayoutDimension?,
-                              heightAnchor: NSLayoutDimension?,
-                              positionConstants: CGPoint = .init(x: CGFloat.zero, y: CGFloat.zero),
-                              sizeAnchorConstants: CGSize = .init(width: CGFloat.zero, height: CGFloat.zero)) -> [ConstraintKey: NSLayoutConstraint] {
+                                     centerYAnchor: NSLayoutYAxisAnchor?,
+                                     widthAnchor: NSLayoutDimension?,
+                                     heightAnchor: NSLayoutDimension?,
+                                     positionConstants: CGPoint = .init(x: CGFloat.zero, y: CGFloat.zero),
+                                     sizeAnchorConstants: CGSize = .init(width: CGFloat.zero, height: CGFloat.zero)) -> [ConstraintKey: NSLayoutConstraint] {
         
         var constraints = [ConstraintKey: NSLayoutConstraint]()
         self.translatesAutoresizingMaskIntoConstraints = false

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "ProgrammaticConstraints"
-  s.version      = "0.1.0"
+  s.version      = "0.0.1"
   s.summary      = "ProgrammaticConstraints"
   s.description  = "Quick and easy PRogrammtic Constraints for UIKit."
   s.license      = { :type => 'Copyright', :text => <<-LICENSE

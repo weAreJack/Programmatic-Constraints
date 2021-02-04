@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
                 }
   s.author       = { "Jack Smith" => "jack.a.smith@live.com" }
   s.platform     = :ios, "9.0"
-  s.homepage     = "https://github.com/weAreJack/Programmatic-Constraints"
+  s.homepage     = "https://github.com/weAreJack/Programmatic-Constraints.git"
   s.source       = { :git => "https://github.com/weAreJack/Programmatic-Constraints", :tag => "#{s.version}" }
   s.source_files = "ProgrammaticConstraints/UIView+ProgrammaticConstraints/*.swift"
 end
